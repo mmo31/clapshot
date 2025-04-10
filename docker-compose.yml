@@ -4,7 +4,7 @@ services:
     image: elonen/clapshot:latest-demo-htadmin
     container_name: clapshot_app
     ports:
-      - "8092:8080"
+      - "8080:8080"
     volumes:
       - clapshotdata:/mnt/clapshot-data/data
 
