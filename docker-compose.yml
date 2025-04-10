@@ -5,8 +5,6 @@ services:
     container_name: clapshot_app
     ports:
       - "8092:8080"
-    depends_on:
-      - db
     volumes:
       - clapshotdata:/mnt/clapshot-data/data
 
