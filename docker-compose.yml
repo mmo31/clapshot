@@ -6,11 +6,13 @@ services:
 #    image: pomerium/pomerium:latest
     #image: ghcr.io/mmo31/personalidentityawareproxy/pomerium:latest
     image: myclapshot
+    pull_policy: build
     container_name: clapshot_app
     ports:
       - 8092:80
     volumes:
       - clapshotdata:/mnt/clapshot-data/data
+    restart: unless-stopped
 
 
 
