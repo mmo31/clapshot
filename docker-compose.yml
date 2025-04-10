@@ -1,7 +1,11 @@
 
 services:
   clapshot:
-    image: elonen/clapshot:latest-demo
+    build:
+      context: .
+#    image: pomerium/pomerium:latest
+    #image: ghcr.io/mmo31/personalidentityawareproxy/pomerium:latest
+    image: myclapshot
     container_name: clapshot_app
     ports:
       - 8092:80
