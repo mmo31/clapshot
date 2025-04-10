@@ -1,7 +1,7 @@
 
 services:
   clapshot:
-    image: elonen/clapshot:latest
+    image: elonen/clapshot:latest-demo-htadmin
     container_name: clapshot_app
     ports:
       - "8092:8080"
