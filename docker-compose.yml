@@ -4,10 +4,10 @@ services:
     image: elonen/clapshot:latest-demo-htadmin
     container_name: clapshot_app
     ports:
-      - "8080:8080"
+      - 8080:80
     volumes:
       - clapshotdata:/mnt/clapshot-data/data
-    network_mode: host
+
 
 
 volumes:
