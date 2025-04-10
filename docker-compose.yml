@@ -12,6 +12,8 @@ services:
       - 8092:80
     volumes:
       - clapshotdata:/mnt/clapshot-data/data
+    environment:
+      - PUBLIC_ADDRESS=https://clapshot.mollin.fr
     restart: unless-stopped
 
 
